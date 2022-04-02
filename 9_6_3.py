@@ -5,4 +5,3 @@ for i in message:
     if descrypt < 97:
         descrypt += 26
     print(chr(descrypt), end='')
-        
