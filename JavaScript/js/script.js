@@ -1,8 +1,4 @@
 'use strict';
-for (let i = 10; i <= 33; i = 10 + i) {
-    
-    for (let j = 1; j <= 3; j++) {
-        
-        document.write(i);
-    }
-}
+let arr = [6, 55, -38, 16, 153, 18, 3, -25, 100]
+
+
