@@ -1,8 +1,14 @@
-// ⋕js.Pm.Lp.FChT.8
+// ⋕js.Pm.Lp.PLC.1
 'use strict';
-let arr = ['a', 'b', 'c', 'd', 'e'];
-let obj = {};
-for (let i = 0; i < arr.length; i++) {
-	obj[i + 1] = arr[i];
+
+let numb = '';
+for (let i = 1; i < 10; i++) {
+   
+    
+    
+
+    document.write(numb + '<br>');
 }
-console.log(obj);
+console.log(typeof(numb));
+
+
