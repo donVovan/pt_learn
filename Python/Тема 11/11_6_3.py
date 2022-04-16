@@ -1,0 +1,7 @@
+s = input()
+s = s.lower()
+s = s.split()
+art1 = s.count('a')
+art2 = s.count('an')
+art3 = s.count('the')
+print('Общее количество артиклей:', art1 + art2 + art3)
