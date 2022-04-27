@@ -1,12 +1,13 @@
-// ⋕js.Pm.SM.Mst.5
+// ⋕js.Pm.SM.Mst.1
 'use strict';
 
 let num = 12345;
 let arr = String(num).split('');
 
-let prod = 1;
+
+let sum = 0;
 for (let digit of arr) {
-	prod *= digit;
+    sum += +digit;
 }
 
-console.log(prod);
+console.log(sum);

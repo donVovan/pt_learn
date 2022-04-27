@@ -6,7 +6,7 @@ let arr = String(num).split('');
 
 let prod = 1;
 for (let digit of arr) {
-	prod *= digit;
+    prod *= digit;
 }
 
 console.log(prod);
