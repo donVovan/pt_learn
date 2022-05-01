@@ -1,5 +1,5 @@
 from random import randint
-n = randint(1, 100)
+
 print('Добро пожаловать в числовую угадайку')
 def is_valid(num):
     num = str(num)
@@ -21,16 +21,22 @@ def find_number(number, fnd):
         return 'Вы угадали, поздравляем!'
     
     
-ans = 0
-counter = 0
-while ans != n:
-    ans = input('Введите число от 1 до 100: ')
-    flag = is_valid(ans)
-    if flag:
-        ans = int(ans)
-        print(find_number(ans, n))
-        counter += 1
-    else:
-        print('А может быть все-таки введем целое число от 1 до 100?')
-print(f'Вы угадали с {counter} попытки')
+
+
+q = 'да'
+while q == 'да':
+    n = randint(1, 100)
+    ans = 0
+    counter = 0
+    while ans != n:
+        ans = input('Введите число от 1 до 100: ')
+        flag = is_valid(ans)
+        if flag:
+            ans = int(ans)
+            print(find_number(ans, n))
+            counter += 1
+        else:
+            print('А может быть все-таки введем целое число от 1 до 100?')
+    print(f'Вы угадали с {counter} попытки')
+    q = input('Еще партию? Введите "да" для продолжения или любой символ что бы закончить ').lower()
 print('Спасибо, что играли в числовую угадайку. Еще увидимся...')
